@@ -22,7 +22,7 @@ Additional style rules, tips and tricks:
 
 4. Meaningful comments or no comments at all. Adding `// Gets the value` to a `GetValue()` function only increases the line count and makes things harder to read.
 
-5. "What" are you working with is more important than "how" are your doing something. First figure out the way your data is structured and how it flows and the implementation will follow.
+5. "What" are you working with is more important than "how" are your doing something. First figure out the way your data is structured and how it flows and the implementation will follow. Refactoring data structures / migrating data is much more of a pain in the ass than refactoring code.
 
 6. When writing a class or some other interface, first sketch out how the public API will look like, then delimitate it from the implementation. To that end, use `protected/private` properly. If a piece of data or a function is only relevant to the class you're writing, it's `protected/private`. If something is still needed by some external helper class, but it's obviously not part of the public API, see if you can use the `friend` keyword before making it `public`.
 
